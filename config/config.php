@@ -9,6 +9,6 @@ define("DB_NAME", "PHPForum");
 define("SITE_TITLE","Welcome To PHPForum");
 
 //Path Configuration
-define('BASE_URI', 'http://'.$_SERVER['SERVER_NAME'].'/PHPForum/');
+define('BASE_URI', 'http://'.$_SERVER['SERVER_NAME'].':8888/Github_Practice/Practice/PHP/PHPForum/');
 
 ?>
