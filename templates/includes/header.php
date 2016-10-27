@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome To TalkingSpace</title>
+    <title>Welcome To PHPForum</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo BASE_URI; ?>templates/css/bootstrap.css" rel="stylesheet">
@@ -40,7 +40,7 @@
 			<div class="col-md-8">
 				<div class="main-col">
 					<div class="block">
-						<h1 class="pull-left">Welcome to Talkingspace</h1>
+						<h1 class="pull-left">Welcome to PHPForm</h1>
 						<h4 class="pull-right">A simple PHP forum engine</h4>
 						<div class="clearfix"></div>
 						<hr>

@@ -1,7 +1,9 @@
 <?php
 
 /**
- * Formatting URL
+ * [Formatting URL]
+ * @param  [type] $str [description]
+ * @return [type]      [description]
  */
 function urlFormat($str){
      //Stripping out all whitespaces
