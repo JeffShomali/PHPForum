@@ -8,6 +8,10 @@ $topic =  new Topic;
 //This is check if site.com/topics.php?category=2 is set
 $category = isset($_GET['category']) ? $_GET['category'] : null;
 
+//Get User From URL
+$user_id = isset($_GET['user']) ? $_GET['user'] : null;
+
+
 //Get Template and Assign Vars
 $template = new Template('templates/topics.php');
 
@@ -17,14 +21,19 @@ if(isset($category)){
 	$template->title = 'Posts In "'.$topic->getCategory($category)->name.'"';
 }
 
-if(!isset($category)){
-     //Assign variables
-      $template->topics = $topic->getAllTopics();
-      $template->totalTopics = $topic->getTotalTopics();
-      $template->totalCategories = $topic->getTotalCategories();
-
+if(isset($user_id)){
+	$template->topics = $topic->getByUser($user_id);
+	//$template->title = 'Posts In "'.$user->getUser($category)->username.'"';
 }
 
+
+if(!isset($category) && !isset($user_id)) {
+     //Assign variables
+      $template->topics = $topic->getAllTopics();
+}
+
+$template->totalTopics = $topic->getTotalTopics();
+$template->totalCategories = $topic->getTotalCategories();
 
 //Dsiplay template
  echo $template;

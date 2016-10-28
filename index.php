@@ -13,5 +13,5 @@ $template = new Template('templates/frontpage.php');
  $template->totalCategories = $topic->getTotalCategories();
 
 
-//Dsiplay template
+//Display template
  echo $template;

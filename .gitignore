@@ -8,3 +8,5 @@ includes/js/bootstrap.js
 includes/fonts/*
 
 includes/css/bootstrap.css
+
+.idea/
