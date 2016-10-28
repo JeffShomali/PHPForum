@@ -10,6 +10,13 @@
     <link href="<?php echo BASE_URI; ?>templates/css/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="<?php echo BASE_URI; ?>templates/css/custom.css" rel="stylesheet">
+
+    <?php
+    //Check if title is set, if not assign it
+     if(!isset($title)){
+          $title = SITE_TITLE; //SITE_TITLE defined in config.php
+     }
+    ?>
   </head>
 
   <body>
@@ -40,7 +47,7 @@
 			<div class="col-md-8">
 				<div class="main-col">
 					<div class="block">
-						<h1 class="pull-left">Welcome to PHPForm</h1>
+						<h1 class="pull-left"><?php echo $title;?></h1>
 						<h4 class="pull-right">A simple PHP forum engine</h4>
 						<div class="clearfix"></div>
 						<hr>
