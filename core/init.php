@@ -1,6 +1,6 @@
 <?php
 //Start Session
-session_start();
+session_start(); // this is iclude in every page
 
 //Include Configuration
 require_once('config/config.php');

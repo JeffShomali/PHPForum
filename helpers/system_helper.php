@@ -1,5 +1,4 @@
 <?php
-
 /**
  * [redirect description]
  * @param  boolean $page         [Page that we want to redirect to]
@@ -30,7 +29,6 @@ function redirect($page = FALSE, $message = NULL, $message_type = NULL) {
 	header ('Location: '.$location);
 	exit;
 }
-
 
 /*
  * Display Session Message

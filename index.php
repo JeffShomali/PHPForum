@@ -7,7 +7,7 @@ $topic =  new Topic;
 //Get Template and Assign Vars
 $template = new Template('templates/frontpage.php');
 
-//Assign variables
+//Passing variables into template and other pages 
  $template->topics = $topic->getAllTopics();
  $template->totalTopics = $topic->getTotalTopics();
  $template->totalCategories = $topic->getTotalCategories();

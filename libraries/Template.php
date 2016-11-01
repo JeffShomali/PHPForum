@@ -36,10 +36,10 @@ class Template {
     public function __toString(){
     	extract($this->vars);
     	chdir(dirname($this->template));
-    	ob_start();
+    	ob_start();//Turn on output buffering
 
-    	include basename($this->template);
+    	include basename($this->template); //include the template into our page
 
-    	return ob_get_clean();
+    	return ob_get_clean(); //Gets the current buffer contents and delete current output buffer
     }
 }

@@ -66,7 +66,7 @@ class User{
 					return true;
 				}
 			}
-		} else { //if not true redirect with erro
+		} else { //if not true redirect with error
 			redirect('register.php', 'Invalid File Type!', 'error');
 		}
 	}
