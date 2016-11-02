@@ -84,11 +84,11 @@ class User{
 		$this->db->bind(':username', $username);
 		$this->db->bind(':password', $password);
 
-		$row = $this->db->single();
+		$row = $this->db->single(); // return just one record
 
 		//Check Rows
 		if($this->db->rowCount() > 0){
-			$this->setUserData($row);
+			$this->setUserData($row); //set session (user_id, user_id, name)
 			return true;
 		} else {
 			return false;

@@ -56,3 +56,27 @@ function displayMessage(){
 		echo '';
 	}
 }
+
+/**
+ * [Check If User Is Logged In]
+ * @return boolean [if session is set and is_logged_in = true]
+ */
+function isLoggedIn(){
+     if(isset($_SESSION['is_logged_in'])) {
+          return true;
+     } else {
+          return false;
+     }
+}
+
+/**
+ * [getUser description]
+ * @return [type] [description]
+ */
+function getUser(){
+	$userArray = array(); //create empty array for holding session variables
+	$userArray['user_id']  = $_SESSION['user_id'];
+	$userArray['username'] = $_SESSION['username'];
+	$userArray['name']     = $_SESSION['name'];
+	return $userArray;
+}
