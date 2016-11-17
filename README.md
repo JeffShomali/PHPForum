@@ -13,4 +13,4 @@ This is a simple Object Oriented PHP forum application.
 - Replies to topic
 
 ## Result
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://github.com/JeffShomali/PHPForum/blob/master/images/result.gif?raw=true "Result")
